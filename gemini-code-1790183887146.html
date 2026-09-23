@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İÜ Yelken Kulübü</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome İkonlar -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+<body class="bg-slate-950 text-white font-sans min-h-screen flex justify-center selection:bg-amber-400 selection:text-slate-950">
+
+  <main class="w-full max-w-md p-5 pb-12 flex flex-col gap-6">
+
+    <!-- Header / Kulüp Tanıtımı -->
+    <header class="text-center pt-3 flex flex-col items-center">
+      <div class="w-20 h-20 mb-3 rounded-2xl bg-gradient-to-tr from-blue-900 via-blue-700 to-sky-600 flex items-center justify-center shadow-lg shadow-blue-950 border-2 border-amber-400/80">
+        <i class="fa-solid fa-sailboat text-3xl text-white"></i>
+      </div>
+      <h1 class="text-2xl font-black tracking-tight text-white">
+        İÜ YELKEN KULÜBÜ
+      </h1>
+      <p class="text-xs text-amber-400 font-semibold tracking-wider uppercase mt-1">
+        İstanbul Üniversitesi • 1453
+      </p>
+    </header>
+
+    <!-- Hızlı İletişim Butonları (Instagram & WhatsApp) -->
+    <section class="grid grid-cols-2 gap-3">
+      <a href="https://www.instagram.com/iuyelken" target="_blank" 
+         class="flex items-center justify-center gap-2 py-3 px-3 rounded-xl bg-gradient-to-r from-pink-600 via-rose-600 to-purple-600 font-bold text-xs text-white shadow-md shadow-pink-900/30 active:scale-[0.98] transition">
+        <i class="fa-brands fa-instagram text-base"></i>
+        <span>Instagram</span>
+      </a>
+
+      <a href="https://chat.whatsapp.com/FKW74Z5qMVt5z5zQFrU0tH" target="_blank" 
+         class="flex items-center justify-center gap-2 py-3 px-3 rounded-xl bg-emerald-700 hover:bg-emerald-600 font-bold text-xs text-white shadow-md shadow-emerald-950 border border-emerald-500/30 active:scale-[0.98] transition">
+        <i class="fa-brands fa-whatsapp text-base text-emerald-300"></i>
+        <span>WhatsApp Grubu</span>
+      </a>
+    </section>
+
+    <!-- Biz Kimiz? -->
+    <section class="p-4 rounded-2xl bg-blue-950/40 border border-blue-900/60 backdrop-blur-sm relative overflow-hidden">
+      <div class="absolute left-0 top-0 bottom-0 w-1.5 bg-emerald-500"></div>
+      <div class="flex items-center gap-2 mb-2 text-amber-400 text-xs font-bold uppercase tracking-wider pl-1">
+        <i class="fa-solid fa-compass"></i>
+        <span>Biz Kimiz?</span>
+      </div>
+      <p class="text-xs text-slate-200 leading-relaxed pl-1 font-normal">
+        İstanbul Üniversitesi Yelken Kulübü olarak denizcilik kültürünü üniversite gençliğiyle buluşturuyoruz. Temel yatçılık eğitimlerinden trofe yarışlarına, teori derslerinden açık deniz seyrine kadar her seviyeden öğrenciye dümene geçme ve rüzgarı yakalama fırsatı sunuyoruz.
+      </p>
+    </section>
+
+    <!-- Bu Seneki Etkinliklerimiz -->
+    <section class="flex flex-col gap-3">
+      <div class="flex items-center justify-between px-1">
+        <h2 class="text-sm font-bold text-white flex items-center gap-2">
+          <i class="fa-solid fa-calendar-check text-amber-400"></i>
+          <span>Bu Seneki Etkinliklerimiz</span>
+        </h2>
+        <span class="text-[10px] bg-emerald-950 text-emerald-300 px-2 py-0.5 rounded-full border border-emerald-700 font-semibold">
+          2026 - 2027
+        </span>
+      </div>
+
+      <div class="p-3.5 rounded-xl bg-blue-950/30 border border-blue-900/50 flex items-start gap-3">
+        <div class="w-10 h-10 rounded-lg bg-amber-400/10 border border-amber-400/30 flex flex-col items-center justify-center text-amber-400 shrink-0">
+          <span class="text-[9px] font-bold uppercase">Eki</span>
+          <span class="text-xs font-black">15</span>
+        </div>
+        <div class="flex-1">
+          <h3 class="text-xs font-semibold text-white">Temel Yatçılık & Seyir Eğitimi 101</h3>
+          <p class="text-[11px] text-slate-300 mt-0.5">Kalamış Marina çıkışlı teorik ve pratik yelken basma, dümencilik temelleri.</p>
+        </div>
+      </div>
+
+      <div class="p-3.5 rounded-xl bg-blue-950/30 border border-blue-900/50 flex items-start gap-3">
+        <div class="w-10 h-10 rounded-lg bg-amber-400/10 border border-amber-400/30 flex flex-col items-center justify-center text-amber-400 shrink-0">
+          <span class="text-[9px] font-bold uppercase">Kas</span>
+          <span class="text-xs font-black">08</span>
+        </div>
+        <div class="flex-1">
+          <h3 class="text-xs font-semibold text-white">Üniversiteler Arası Sonbahar Trofesi</h3>
+          <p class="text-[11px] text-slate-300 mt-0.5">Yarış takımımızla Marmara etabında start alıyoruz. Destek ekibi kayıtları açık!</p>
+        </div>
+      </div>
+
+      <div class="p-3.5 rounded-xl bg-blue-950/30 border border-blue-900/50 flex items-start gap-3">
+        <div class="w-10 h-10 rounded-lg bg-amber-400/10 border border-amber-400/30 flex flex-col items-center justify-center text-amber-400 shrink-0">
+          <span class="text-[9px] font-bold uppercase">Ara</span>
+          <span class="text-xs font-black">20</span>
+        </div>
+        <div class="flex-1">
+          <h3 class="text-xs font-semibold text-white">Kışa Merhaba: Sailors Gathering</h3>
+          <p class="text-[11px] text-slate-300 mt-0.5">Kampüs içi tanışma, denizcilik söyleşisi ve yeni dönem ekip lansmanı.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Geçen Seneki Etkinliklerden Fotoğraflar (Kaydırmalı Slider) -->
+    <section class="flex flex-col gap-2">
+      <div class="flex items-center justify-between px-1">
+        <h2 class="text-sm font-bold text-white flex items-center gap-2">
+          <i class="fa-solid fa-images text-emerald-400"></i>
+          <span>Geçen Senelerden Kareler</span>
+        </h2>
+        <span class="text-[11px] text-slate-400 font-medium">Sağa kaydır &rarr;</span>
+      </div>
+
+      <div class="flex gap-3 overflow-x-auto no-scrollbar scroll-smooth snap-x snap-mandatory py-1">
+        <!-- Fotoğraf 1 -->
+        <div class="snap-center shrink-0 w-64 h-44 rounded-xl overflow-hidden relative border border-blue-900/60 bg-blue-950">
+          <img src="images/campus-cup-bordada-ekip.jpg" alt="Campus Cup yarışında bordada oturan yarış ekibimiz" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent flex items-end p-2.5">
+            <span class="text-[11px] font-semibold text-amber-300">MIYC Campus Cup &mdash; Bordada Ekip</span>
+          </div>
+        </div>
+
+        <!-- Fotoğraf 2 -->
+        <div class="snap-center shrink-0 w-64 h-44 rounded-xl overflow-hidden relative border border-blue-900/60 bg-blue-950">
+          <img src="images/gocek-trofesi-odul-toreni.jpg" alt="Göcek Trofesi ödül töreninde kupalarla ve kulüp flamasıyla ekibimiz" loading="lazy" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent flex items-end p-2.5">
+            <span class="text-[11px] font-semibold text-amber-300">Göcek Trofesi &mdash; Ödül Töreni</span>
+          </div>
+        </div>
+
+        <!-- Fotoğraf 3 -->
+        <div class="snap-center shrink-0 w-64 h-44 rounded-xl overflow-hidden relative border border-blue-900/60 bg-blue-950">
+          <img src="images/marmaris-kupa-toreni.jpg" alt="Marmaris International Yacht Club'da kupamızla ekip fotoğrafı" loading="lazy" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent flex items-end p-2.5">
+            <span class="text-[11px] font-semibold text-amber-300">Marmaris IYC &mdash; Kupamızla</span>
+          </div>
+        </div>
+
+        <!-- Fotoğraf 4 -->
+        <div class="snap-center shrink-0 w-64 h-44 rounded-xl overflow-hidden relative border border-blue-900/60 bg-blue-950">
+          <img src="images/yaris-etabi-tam-yatis.jpg" alt="Yarış etabında tam yatışta bordaya dizilen ekip" loading="lazy" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent flex items-end p-2.5">
+            <span class="text-[11px] font-semibold text-amber-300">Yarış Etabı &mdash; Tam Yatış</span>
+          </div>
+        </div>
+
+        <!-- Fotoğraf 5 -->
+        <div class="snap-center shrink-0 w-64 h-44 rounded-xl overflow-hidden relative border border-blue-900/60 bg-blue-950">
+          <img src="images/kadin-ekip-kulup-flamasi.jpg" alt="Kulüp flamamızla teknede kadın ekibimiz" loading="lazy" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent flex items-end p-2.5">
+            <span class="text-[11px] font-semibold text-amber-300">Kadın Ekibimiz &mdash; Flamamızla</span>
+          </div>
+        </div>
+
+        <!-- Fotoğraf 6 -->
+        <div class="snap-center shrink-0 w-64 h-44 rounded-xl overflow-hidden relative border border-blue-900/60 bg-blue-950">
+          <img src="images/koylar-arasi-seyir.jpg" alt="Koylar arasında yelken açmış tekne ve seyir ekibi" loading="lazy" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent flex items-end p-2.5">
+            <span class="text-[11px] font-semibold text-amber-300">Koylar Arası Seyir</span>
+          </div>
+        </div>
+
+        <!-- Fotoğraf 7 -->
+        <div class="snap-center shrink-0 w-64 h-44 rounded-xl overflow-hidden relative border border-blue-900/60 bg-blue-950">
+          <img src="images/yaris-ekibi-start-oncesi.jpg" alt="Start öncesi marinada kulüp forması giyen yarış ekibi" loading="lazy" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent flex items-end p-2.5">
+            <span class="text-[11px] font-semibold text-amber-300">Yarış Ekibi &mdash; Start Öncesi</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-[10px] text-slate-400 pt-3 border-t border-slate-900 flex flex-col gap-1">
+      <p class="font-medium text-white">İstanbul Üniversitesi Yelken Kulübü © 2026</p>
+      <p class="text-amber-400/80">Pruvanız neta, rüzgarınız kolayına olsun!</p>
+    </footer>
+
+  </main>
+
+</body>
+</html>
